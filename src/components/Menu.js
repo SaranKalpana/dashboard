@@ -9,26 +9,92 @@ const Menu = () => {
   return (
     <Paper sx={{ p: 4, backgroundColor: '#252538', color: '#fff', height: '290px' }}>
       <List>
-        <ListItem button sx={{ py: 2 }}>
+        <ListItem button sx={{ py: 2, display: 'flex', alignItems: 'center' }}>
           <ListItemIcon>
-            <FilterHdrIcon sx={{ color: 'orange' }} />
+            <Box
+              sx={{
+                backgroundColor: 'orange',
+                borderRadius: '50%',
+                p: 1,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <FilterHdrIcon sx={{ color: '#fff', fontSize: 30 }} />
+            </Box>
           </ListItemIcon>
           <ListItemText primary="Goals" primaryTypographyProps={{ variant: 'body1' }} />
-          <ArrowForwardIosIcon sx={{ color: '#fff' }} />
+          <Box
+            sx={{
+              backgroundColor: '#333',
+              borderRadius: '50%',
+              p: 0.5,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <ArrowForwardIosIcon sx={{ color: '#fff', fontSize: 18 }} />
+          </Box>
         </ListItem>
-        <ListItem button sx={{ py: 2 }}>
+        <ListItem button sx={{ py: 2, display: 'flex', alignItems: 'center' }}>
           <ListItemIcon>
-            <RestaurantIcon sx={{ color: 'blue' }} />
+            <Box
+              sx={{
+                backgroundColor: 'blue',
+                borderRadius: '50%',
+                p: 1,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <RestaurantIcon sx={{ color: '#fff', fontSize: 30 }} />
+            </Box>
           </ListItemIcon>
           <ListItemText primary="Popular Dishes" primaryTypographyProps={{ variant: 'body1' }} />
-          <ArrowForwardIosIcon sx={{ color: '#fff' }} />
+          <Box
+            sx={{
+              backgroundColor: '#333',
+              borderRadius: '50%',
+              p: 0.5,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <ArrowForwardIosIcon sx={{ color: '#fff', fontSize: 18 }} />
+          </Box>
         </ListItem>
-        <ListItem button sx={{ py: 2 }}>
+        <ListItem button sx={{ py: 2, display: 'flex', alignItems: 'center' }}>
           <ListItemIcon>
-            <MenuBookIcon sx={{ color: 'cyan' }} />
+            <Box
+              sx={{
+                backgroundColor: 'cyan',
+                borderRadius: '50%',
+                p: 1,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <MenuBookIcon sx={{ color: '#fff', fontSize: 30 }} />
+            </Box>
           </ListItemIcon>
           <ListItemText primary="Menus" primaryTypographyProps={{ variant: 'body1' }} />
-          <ArrowForwardIosIcon sx={{ color: '#fff' }} />
+          <Box
+            sx={{
+              backgroundColor: '#333',
+              borderRadius: '50%',
+              p: 0.5,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <ArrowForwardIosIcon sx={{ color: '#fff', fontSize: 18 }} />
+          </Box>
         </ListItem>
       </List>
     </Paper>

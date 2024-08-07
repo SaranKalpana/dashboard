@@ -17,7 +17,6 @@ const Dashboard = () => {
         <Header />
         <Box component="main" sx={{ flexGrow: 1, p: { xs: 1, sm: 2, md: 3 } }}>
           <Grid container spacing={2}>
-            {/* Stats Cards */}
             <Grid item xs={12} md={8}>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6} md={3}>
@@ -35,13 +34,11 @@ const Dashboard = () => {
               </Grid>
             </Grid>
             
-            {/* Net Profit Card */}
             <Grid item xs={12} md={4}>
               <NetProfitCard />
             </Grid>
           </Grid>
 
-          {/* Charts and Lists */}
           <Grid container spacing={2} sx={{ marginTop: { xs: 1, sm: 2, md: 3 } }}>
             <Grid item xs={12} md={8}>
               <ActivityChart />
